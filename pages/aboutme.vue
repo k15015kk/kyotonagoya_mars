@@ -67,7 +67,7 @@
 export default {
   data() {
     return {
-      profile_img: require('@/assets/img/78664396_2479618235699637_5510365026982035456_n.jpg'),
+      profile_img: require('@/assets/img/my_face.jpg'),
     }
   },
 }
