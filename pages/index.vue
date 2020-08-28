@@ -6,7 +6,7 @@
           <v-col cols="12" class="text-center pt-8 pb-4">
             <v-btn
               class="welcome pt-12 pb-12"
-              color="orange darken-2"
+              color="orange darken-2 white--text"
               elevation="8"
               height="100%"
               style="text-transform: none"
@@ -25,8 +25,8 @@
           >
             <v-btn
               height="60"
-              class="text-h5 font-weight-bold black--text"
-              color="grey lighten-4"
+              class="text-h5 font-weight-bold"
+              color="grey lighten-4 black--text"
               style="text-transform: none"
               :href="item.href"
               target="_blank"

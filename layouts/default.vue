@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer v-model="drawer" clipped fixed app>
       <v-list>
         <v-list-item
@@ -52,7 +52,7 @@ export default {
         {
           icon: 'mdi-account',
           title: 'About Me',
-          to: '/',
+          to: '/aboutme',
         },
       ],
       title: 'kyoto.nagoya',
