@@ -16,8 +16,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    titleTemplate: "kyoto.nagoya",
-    title: "kyoto.nagoya" || '',
+    titleTemplate: 'kyoto.nagoya',
+    title: 'kyoto.nagoya' || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

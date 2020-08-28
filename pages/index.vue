@@ -1,14 +1,14 @@
 <template>
   <v-container fluid class="bg">
     <v-row>
-      <v-col cols="12" class="text-center pa-0">
+      <v-col cols="12" class="text-center pl-8 pr-8">
         <v-row>
-          <v-col cols="12" class="text-center pt-8 pl-8 pr-8 pb-4">
+          <v-col cols="12" class="text-center pt-8 pb-4">
             <v-btn
-              class="text-h2 font-weight-bold white--text"
+              class="welcome pt-12 pb-12"
               color="orange darken-2"
-              height="180"
               elevation="8"
+              height="100%"
               style="text-transform: none"
               block
               >Welcome to OSAKA
@@ -21,7 +21,7 @@
             cols="12"
             sm="6"
             md="3"
-            class="text-center pt-4 pl-8 pr-8 pb-8"
+            class="text-center pt-4 pb-8"
           >
             <v-btn
               height="60"
@@ -54,6 +54,23 @@
   height: 100%;
   width: 100%;
   background-size: cover;
+}
+
+.welcome {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .welcome {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcome {
+    font-size: 40px;
+  }
 }
 </style>
 
