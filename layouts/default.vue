@@ -47,7 +47,7 @@ export default {
         {
           icon: 'mdi-folder-multiple',
           title: 'Portfolio',
-          to: '/',
+          to: '/portfolio',
         },
         {
           icon: 'mdi-account',
