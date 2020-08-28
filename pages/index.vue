@@ -1,93 +1,90 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation </a
-            >.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
+  <v-container fluid class="bg">
+    <v-row>
+      <v-col cols="12" class="text-center pa-0">
+        <v-row>
+          <v-col cols="12" class="text-center pt-8 pl-8 pr-8 pb-4">
+            <v-btn
+              class="text-h2 font-weight-bold white--text"
+              color="orange darken-2"
+              height="180"
+              elevation="8"
+              style="text-transform: none"
+              block
+              >Welcome to OSAKA
+            </v-btn>
+          </v-col>
+
+          <v-col
+            v-for="(item, i) in items"
+            :key="i"
+            cols="12"
+            sm="6"
+            md="3"
+            class="text-center pt-4 pl-8 pr-8 pb-8"
           >
-            Nuxt Documentation
-          </a>
-          <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+            <v-btn
+              height="60"
+              class="text-h5 font-weight-bold black--text"
+              color="grey lighten-4"
+              style="text-transform: none"
+              :href="item.href"
+              target="_blank"
+              block
+            >
+              <v-img
+                :src="item.icon"
+                height="48"
+                max-width="48"
+                aspect-ratio="1"
+                contain
+              ></v-img>
+              {{ item.title }}
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+<style scoped>
+.bg {
+  background-image: url('~@/assets/img/tokyostation.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+</style>
 
+<script>
 export default {
-  components: {
-    Logo,
-    VuetifyLogo,
+  data() {
+    return {
+      image_src: require('@/assets/img/tokyostation.jpg'),
+      items: [
+        {
+          icon: require('@/assets/img/Twitter_Logo_Blue.png'),
+          title: 'Twitter',
+          href: 'https://twitter.com/kyotonagoya1476',
+        },
+        {
+          icon: require('@/assets/img/IG_Glyph_Fill.png'),
+          title: 'Instagram',
+          href: 'https://www.instagram.com/kyoto.nagoya',
+        },
+        {
+          icon: require('@/assets/img/logo_symbol.png'),
+          title: 'note',
+          href: 'https://note.com/kyoto_nagoya',
+        },
+        {
+          icon: require('@/assets/img/hatenablog-logo.png'),
+          title: 'BLOG',
+          href: 'https://kyoto-nagoya.hatenablog.com/',
+        },
+      ],
+    }
   },
 }
 </script>

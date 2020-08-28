@@ -1,10 +1,6 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer
-      v-model="drawer"
-      clipped
-      app
-    >
+    <v-navigation-drawer v-model="drawer" clipped fixed app>
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -22,18 +18,16 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" app>
+    <v-app-bar :clipped-left="clipped" fixed app dense>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
     </v-app-bar>
     <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-main>
-    <v-footer app>
-      <span>&copy; {{ new Date().getFullYear() }} kyoto.nagoya </span>
+    <v-footer fixed app>
+      <span>&copy; {{ new Date().getFullYear() }} kyoto.nagoya</span>
     </v-footer>
   </v-app>
 </template>
@@ -43,7 +37,6 @@ export default {
   data() {
     return {
       clipped: true,
-      app: true,
       drawer: false,
       items: [
         {
