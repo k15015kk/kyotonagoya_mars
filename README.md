@@ -1,20 +1,7 @@
 # kyotonagoya_mars
 
-## Build Setup
+## 概要
 
-```bash
-# install dependencies
-$ npm install
+kyoto.nagoyaの2020年版のWebサイトです．今までのウェブサイトは，かなり単純はhtml/css/jsで構成していましたが，ポートフォーリオに対応したいため，Nuxt.js + Contentful で作ります（ブログは，はてなブログに任せる予定）．
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+このREADMEは，あとでアップデートします．
