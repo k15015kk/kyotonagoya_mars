@@ -11,8 +11,9 @@
               height="100%"
               style="text-transform: none"
               block
-              >Welcome to OSAKA
-            </v-btn>
+              @click="play"
+              >Welcome to OSAKA</v-btn
+            >
           </v-col>
 
           <v-col
@@ -75,6 +76,9 @@
 </style>
 
 <script>
+import soundFile from '~/assets/audio/gunmasong.mp3'
+let audio = null
+
 export default {
   data() {
     return {
@@ -102,6 +106,17 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    play() {
+      if (audio === null) {
+        audio = new Audio(soundFile)
+      } else {
+        audio.pause()
+        audio.currentTime = 0.0
+      }
+      audio.play()
+    },
   },
 }
 </script>
