@@ -12,7 +12,7 @@
               style="text-transform: none"
               block
               @click="play"
-              >Welcome to OSAKA</v-btn
+              >OSAKA</v-btn
             >
           </v-col>
 

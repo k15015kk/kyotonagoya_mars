@@ -4,12 +4,12 @@
       <v-col cols="12" class="pl-8 pr-8">
         <v-card class="mx-auto" max-width="640px">
           <div class="text-center pt-8">
-            <v-avatar size="180px">
+            <v-avatar size="144px">
               <v-img :src="profile_img" alt="Haruki Inoue" />
             </v-avatar>
           </div>
           <v-card-text>
-            <h1 class="text-h2 text-center pb-4">Haruki Inoue</h1>
+            <h1 class="text-h4 text-center pb-4">Haruki Inoue</h1>
             <p>
               情報科学を専攻している大学院修士2年です．公共交通機関と位置情報アプリを絡めた研究をしています．最近はスマートフォアプリの開発とWebアプリケーションの開発をしています．週末は公共交通機関を使ってお出かけをしています．乗ることがお出かけのメインです．あと，よくヒトカラに行きます．2021年から千葉県内のどこかに住みます．
             </p>
