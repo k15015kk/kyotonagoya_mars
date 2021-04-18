@@ -49,32 +49,6 @@
   </v-container>
 </template>
 
-<style scoped>
-.bg {
-  background-image: url('~@/assets/img/tokyostation.jpg');
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-}
-
-.welcome {
-  font-size: 60px;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 960px) {
-  .welcome {
-    font-size: 48px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .welcome {
-    font-size: 40px;
-  }
-}
-</style>
-
 <script>
 import soundFile from '~/assets/audio/gunmasong.mp3'
 let audio = null
@@ -120,3 +94,29 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.bg {
+  background-image: url('~@/assets/img/tokyostation.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.welcome {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .welcome {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcome {
+    font-size: 40px;
+  }
+}
+</style>

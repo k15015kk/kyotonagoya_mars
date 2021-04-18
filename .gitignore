@@ -98,3 +98,6 @@ sw.*
 ### Firebase Patch ###
 .runtimeconfig.json
 .firebase/
+
+## Contentful
+.contentful.json

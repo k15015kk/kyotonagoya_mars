@@ -72,7 +72,7 @@
 </template>
 
 <script>
-export default {
+module.exports =  {
   data() {
     return {
       profile_img: require('@/assets/img/my_identity.png'),
