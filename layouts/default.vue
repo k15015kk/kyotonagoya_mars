@@ -33,7 +33,7 @@
 </template>
 
 <script>
-module.exports =  {
+module.exports = {
   data() {
     return {
       drawer: null,
