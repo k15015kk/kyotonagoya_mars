@@ -19,12 +19,6 @@ import { createClient } from '~/plugins/contentful.js'
 const client = createClient()
 
 export default {
-  data() {
-    return {
-      person: null,
-      posts: null,
-    }
-  },
   // `env` is available in the context object
   async asyncData({ env }) {
     try {
@@ -44,6 +38,7 @@ export default {
         posts: posts.items,
       }
     } catch (message) {
+      // eslint-disable-next-line no-console
       return console.error(message)
     }
   },
