@@ -26,7 +26,7 @@
 </template>
 
 <script>
-module.exports = {
+export default {
   layout: 'empty',
   props: {
     error: {
